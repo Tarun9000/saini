@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif, "Poppins";
+      }
+      .blog {
+        background-color: #081b29;
+        width: 100%;
+        height: 100vh;
+      }
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+      }
+      .logo {
+        position: relative;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .logo::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #081b29;
+        animation: showRight 1.5s ease forwards;
+        animation-delay: 1s;
+      }
+      .navbar a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        margin-left: 40px;
+        font-weight: 600;
+        transition: 0.2s;
+      }
+      /* .navbar a:hover, */
+      .navbar a:hover {
+        color: #00abf0;
+      }
+      .navbar a.active {
+        color: #00abf0;
+      }
+      .home {
+        color: white;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+      }
+      /*herosection first */
+      .herosection {
+        max-width: 873px;
+        height: 300px;
+        padding-left: 0px;
+      }
+      .herosection h1 {
+        padding: 5px 41px 9px 42px;
+        font-size: 55px;
+      }
+      .herosection h1::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #081b29;
+        animation: showRight 1.5s ease forwards;
+        animation-delay: 1s;
+      }
+      .herosection h3 {
+        font-size: 18px;
+        padding: 5px 41px 9px 42px;
+        position: relative;
+      }
+      .image {
+        width: 492px;
+        height: auto;
+        display: grid;
+        place-items: center;
+      
+      }
+      .photo {
+        width: 320px;
+        height: auto;
+        
+        clip-path: circle(42% at 50% 47%);
+      }
+      
+      .btn {
+        bottom: 80px;
+        position: absolute;
+        color: white;
+        width: 249px;
+        height: 72px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        gap: 44px;
+        left: 30px;
+      }
+      .btn a {
+        color: white;
+        background-color: aqua;
+        font-size: 56px;
+        padding: 11px;
+        border-radius: 6px;
+        width: 69px;
+      }
+      .btn a:hover {
+        background-color: #00abf0;
+      }
+
+        /* herosection2 */
+
+      .herosection2 {
+        width: 100%;
+        height: 100vh;
+        padding: 20px;
+        overflow: scroll;
+        background-color: brown;
+      }
+      .projet{
+        width: 100%;
+        height: 95vh;
+        background-color: #081b29;
+      }
+      .projet  h1{
+        display: grid;
+        place-items: center;
+        color: #fff;
+        padding-top: 10px;
+        font-size: 30px;
+      }
+      /* .footer {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(37, 36, 36, 0.355);
+        color: white;
+         padding: 10px; 
+      }
+      .skill {
+        width: 100px;
+         height: 30vh; 
+
+        align-content: space-between;
+      } */
+      /* .skill h2 {
+        padding: 2px;
+      }
+      .skill h4 {
+        align-content: space-between;
+        height: 5vh;
+        padding-top: 8px;
+        padding-left: 6px;
+      }
+      .social {
+        background-color: red;
+        position: absolute;
+      } */
+      @keyframes showRight {
+        100% {
+          width: 0;
+        }
+      }
+      /* @media(max w){
+
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="blog">
+      <header class="header">
+        <a href="#" class="logo">Blog</a>
+        <nav class="navbar">
+          <div>
+            <a href="index.html" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Profile</a>
+          </div>
+        </nav>
+      </header>
+      <section class="home">
+        <div class="herosection">
+          <h1>Hi,I'mTarun Saini</h1>
+          <h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates
+            autem, magnam quis mollitia nemo asperiores libero dicta fugit rem,
+            doloremque laboriosam error? Itaque culpa rerum excepturi doloribus
+            sunt asperiores porro?
+          </h3>
+        </div>
+        <div class="image">
+          <img class="photo" src="image/1727546042933m.jpg" alt="image" />
+        </div>
+        <div class="btn">
+          <a href="#"><i class="bx bx-like"></i></a>
+          <a href="#"><i class="bx bx-dislike"></i></a>
+        </div>
+      </section>
+      <!-- second section  -->
+      <div class="herosection2">
+        <div class="projet">
+          <h1>Projects</h1>
+          <div class="box">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
+            <div class="box5"></div>
+            <div class="box6"></div>
+          </div>
+        </div>
+      </div>
+      <!-- <footer class="footer">
+        <div class="">
+          <div class="skill">
+            <h2>Skill</h2>
+            <h4>Html</h4>
+            <h4>CSS</h4>
+            <h4>Paython</h4>
+            <h4>C</h4>
+            <h4>C++</h4>
+          </div>
+           <div class="social">
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+                <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+            </div> 
+        </div>
+      </footer> -->
+    </div>
+  </body>
+</html>
