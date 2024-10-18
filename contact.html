@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+       * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif, "Poppins";
+      }
+      .blog {
+        background-color: #081b29;
+        width: 100%;
+        height: 100vh;
+      }
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        background-color: #081b29;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+      }
+      .logo {
+        position: relative;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .logo::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #081b29;
+        animation: showRight 1.5s ease forwards;
+        animation-delay: 1s;
+      }
+      .navbar a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        margin-left: 40px;
+        font-weight: 600;
+        transition: 0.5s;
+      }
+      /* .navbar a:hover, */
+      .navbar a:hover{
+        color: #00abf0;
+      }
+      .navbar a.active {
+        color: #00abf0;
+      }
+      body {
+        /* background-color: #081b29; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+       
+      }
+      .contact {
+        background-color: #081b29;
+        width: 50rem;
+        height: 25rem;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .contacticon a{
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        margin:5rem;
+        font-weight: 700;
+        color: brown;
+        font-family: 'poppin',sans-serif;
+      
+      }
+      .contacticon a:hover{
+        background-color: brown;
+        color: #fff;
+      }
+      .linkedin a {
+        color: blue;
+      }
+      .linkedin a:hover{
+        background-color: blue;
+        color:#fff;
+      }
+      .whatsapp a{
+        color: green;
+      }
+      .whatsapp a:hover{
+        color: #fff;
+        background-color: green;
+      }
+      @keyframes showRight {
+        100% {
+          width: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Blog</a>
+      <nav class="navbar">
+        <div>
+          <a href="index.html" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="#">Profile</a>
+        </div>
+      </nav>
+    </header>
+    <div class="contact">
+        <div class="contacticon">
+            <a href="#"><i class='bx bxl-gmail'></i></a>
+            <span class="linkedin">
+              <a href="#" class="linkedin"><i class='bx bxl-linkedin'></i></a>
+            </span>
+            <span class="whatsapp">
+              <a href="#" class="whatsapp"><i class='bx bxl-whatsapp'></i></a>
+            </span>
+        </div>
+    </div>
+  </body>
+</html>
