@@ -72,11 +72,12 @@
         align-items: center;
         width: 100%;
         height: 100vh;
+        padding-top: 3rem;
       }
       /*herosection first */
       .herosection {
-        max-width: 873px;
-        height: 300px;
+        width: 50%;
+        height: auto;
         padding-left: 0px;
       }
       .herosection h1 {
@@ -104,7 +105,7 @@
         font-weight: 800;
       }
       .image {
-        width: 492px;
+        width: 50%;
         height: auto;
         display: grid;
         place-items: center;
@@ -118,7 +119,7 @@
 
       .btn {
         bottom: 80px;
-        position: absolute;
+        position: relative;
         color: white;
         width: 249px;
         height: 72px;
@@ -209,14 +210,15 @@
       .box2 {
         width: 20rem;
         height: 23rem;
-        padding: 5px;
+        /* padding: 5px; */
       }
 
       .box2 img {
         width: 299px;
         height: 208px;
-        margin: 5px;
-        padding: 5px;
+        /* margin: 5px;
+        padding: 5px; */
+        object-fit: cover;
       }
       .button {
         width: 302px;
@@ -321,7 +323,10 @@
       }
       .Language {
         width: 50%;
-        padding: 2rem 0rem 0.5rem 5rem;
+        height: auto;
+        display: grid;
+        justify-content: center;
+       
       }
       .Language h3 {
         color: #00abf0;
@@ -331,7 +336,7 @@
       .Language h4 {
         font-size: 20px;
         font-weight: 600;
-        margin: 20px;
+        margin: 16px;
       }
       .findme {
         width: 50%;
@@ -343,9 +348,8 @@
         padding: 0rem 17rem 0rem 0rem;
       }
       .findme a {
-        /* text-decoration: none; */
         color: #fff;
-        font-size: 30px;
+        font-size: 40px;
       }
       #insta:hover {
         border-radius: 10px;
@@ -368,7 +372,78 @@
         }
       }
       /* media quary */
-      /* @media {
+      @media (max-width: 480px) {
+        #herosection1 {
+          width: 100%;
+          height: auto;
+          display: inline-table;
+          padding-top: 8rem;
+        }
+        #hero {
+          width: 100%;
+        }
+        #hero h1 {
+          font-size: 35px;
+        }
+        #hero h3 {
+          font-size: 19px;
+          letter-spacing: 0px;
+          font-weight: 500;
+        }
+        #photo {
+          width: 100%;
+          height: 38vh;
+        }
+        #photo img {
+          width: 202px;
+        }
+        /* project */
+        #proj {
+          overflow: scroll;
+        }
+        #proj .allbox {
+          display: grid;
+          justify-content: center;
+        }
+        /* footer */
+        #foot {
+          display: inline;
+        }
+        #foot .Language {
+          width: 100%;
+          height: auto;
+          margin-top: 1rem;
+          display: grid;
+          place-items: center;
+        }
+        #foot .findme {
+          width: 100%;
+          margin: 5px;
+          padding: 12px;
+        }
+        #foot .Language h4 {
+          font-size: 18px;
+          margin: 12px;
+        }
+      }
+      /* @media (max-width: 800px) {
+        #herosection1 {
+          width: 100%;
+          height: 60vh;
+        }
+        #hero {
+          width: 100%;
+          height: auto;
+        }
+        #hero h1 {
+          font-size: 45px;
+        }
+        #hero h3 {
+          font-size: 20px;
+          letter-spacing: 0px;
+          font-weight: 500;
+        }
+        
       } */
     </style>
   </head>
@@ -385,8 +460,8 @@
           </div>
         </nav>
       </header>
-      <section class="home">
-        <div class="herosection">
+      <section id="herosection1" class="home">
+        <div id="hero" class="herosection">
           <h1>Hi,I'm Tarun Saini</h1>
           <h3>
             I am currently persuing B.tech in computer science,i am a part time
@@ -395,17 +470,17 @@
             quick learner. and my weakness are emotionally weak.
           </h3>
         </div>
-        <div class="image">
+        <div id="photo" class="image">
           <img class="photo" src="image.jpg" alt="image" />
         </div>
-        <div class="btn">
+        <!-- <div class="btn">
           <a href="#"><i class="bx bx-like"></i></a>
           <a href="#"><i class="bx bx-dislike"></i></a>
-        </div>
+        </div> -->
       </section>
       <!-- second section  -->
       <div class="herosection2">
-        <div class="projet">
+        <div id="proj" class="projet">
           <h1>Projects</h1>
           <div class="allbox">
             <!-- box one -->
@@ -420,7 +495,8 @@
             <!-- box two -->
             <div class="boxs">
               <div class="box2">
-                <img src="projectimage.png" alt="" />
+                <img src="calculator image.jpg" alt="" />
+                <p>This calculator create using with HTML,CSS & JS</p>
                 <div class="button">
                   <button>Get Code</button>
                 </div>
@@ -429,7 +505,7 @@
             <!-- box three -->
             <div class="boxs">
               <div class="box3">
-                <img src="projectimage.png" alt="" />
+                <img src="weather image.jpg" alt="" />
                 <div class="button">
                   <button>Get Code</button>
                 </div>
@@ -489,7 +565,7 @@
       <!-- Footer -->
       <footer class="footer">
         <h1>Skills & Find me</h1>
-        <div class="footbar">
+        <div id="foot" class="footbar">
           <div class="Language">
             <h3>Language</h3>
             <h4>C</h4>
